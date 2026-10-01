@@ -191,3 +191,27 @@ WHERE LOWER(Region) LIKE "%central%";
 ```
 
 This searches for regions containing `central` regardless of how the text is capitalized.
+
+### 11. ORDER BY
+
+`ORDER BY` is used to sort query results in ascending (`ASC`) or descending (`DESC`) order.
+
+Example:
+
+```sql
+SELECT Name, Population
+FROM country
+ORDER BY Population DESC;
+```
+
+This displays countries from the highest population to the lowest population.
+
+To sort from the lowest to the highest population:
+
+```sql
+SELECT Name, Population
+FROM country
+ORDER BY Population ASC;
+```
+
+`ASC` is the default sorting order if no direction is specified.
