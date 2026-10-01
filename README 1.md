@@ -299,3 +299,24 @@ WHERE (Continent = 'Africa' OR Continent = 'Asia')
 ```
 
 Using parentheses is recommended when combining multiple conditions because it makes the query easier to understand and reduces ambiguity.
+
+## Practical Challenge
+
+### Calculate North America Surface Area and Population
+
+I used aggregate functions to calculate the total surface area and population for countries in North America.
+
+```sql
+SELECT 
+    SUM(SurfaceArea) AS "North America Surface Area Total",
+    SUM(Population) AS "North America Population Total"
+FROM country
+WHERE Region LIKE "%North America%";
+```
+
+This query demonstrates the use of:
+
+- `SUM()` to calculate totals
+- `LIKE` to filter regions based on a text pattern
+- `AS` to create meaningful column names
+- `WHERE` to filter the records
