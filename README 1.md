@@ -44,3 +44,17 @@ SELECT Name, Continent, Population
 FROM country
 WHERE Continent = 'Africa' OR Continent = 'Asia';
 ```
+
+### 4. BETWEEN
+
+The `BETWEEN` operator is used to search for values within a specific range. It includes both the starting and ending values.
+
+Example:
+
+```sql
+SELECT Name, Capital, Region, SurfaceArea, Population
+FROM country
+WHERE Population BETWEEN 50000000 AND 100000000;
+```
+
+This query returns countries with a population from **50 million to 100 million**, including both limits.
