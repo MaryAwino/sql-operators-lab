@@ -80,6 +80,32 @@ The `_` wildcard represents exactly one character.
 Example:
 
 ```sql
+
+### 6. IN and NOT IN
+
+The `IN` operator is used to match a value against a list of possible values.
+
+Example:
+
+```sql
+SELECT Name, Continent
+FROM country
+WHERE Continent IN ('Africa', 'Asia');
+```
+
+This returns countries located in either Africa or Asia.
+
+The `NOT IN` operator excludes the specified values.
+
+Example:
+
+```sql
+SELECT Name, Continent
+FROM country
+WHERE Continent NOT IN ('Africa', 'Asia');
+```
+
+This returns countries that are not located in Africa or Asia.
 SELECT Name
 FROM country
 WHERE Name LIKE "Ke_ya";
