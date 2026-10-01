@@ -342,3 +342,14 @@ Through this lab, I practiced:
 - Returning unique values with `DISTINCT`
 - Understanding SQL operator precedence
 - Performing basic data analysis using SQL
+
+
+## Lab Environment
+
+- **Cloud Platform:** Amazon Web Services (AWS)
+- **Lab Environment:** AWS re/Start
+- **Database:** MySQL/MariaDB
+- **Database:** `world`
+- **Main Table:** `country`
+- **Access Method:** AWS Command Host using Session Manager
+- **Operating System:** Linux
