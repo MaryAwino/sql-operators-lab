@@ -58,3 +58,31 @@ WHERE Population BETWEEN 50000000 AND 100000000;
 ```
 
 This query returns countries with a population from **50 million to 100 million**, including both limits.
+
+### 5. LIKE and Wildcards
+
+The `LIKE` operator is used to search for a specific pattern in text.
+
+The `%` wildcard represents zero or more characters.
+
+Example:
+
+```sql
+SELECT Name, Region
+FROM country
+WHERE Region LIKE "%Europe%";
+```
+
+This returns countries where the word `Europe` appears anywhere in the `Region` value.
+
+The `_` wildcard represents exactly one character.
+
+Example:
+
+```sql
+SELECT Name
+FROM country
+WHERE Name LIKE "Ke_ya";
+```
+
+This searches for names where the `_` represents one character.
