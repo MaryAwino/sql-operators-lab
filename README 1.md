@@ -235,3 +235,20 @@ This groups countries by continent and returns only continents that have more th
 
 - `WHERE` filters individual records before grouping.
 - `HAVING` filters grouped results after `GROUP BY`.
+
+### 13. GROUP BY with SUM()
+
+`GROUP BY` can be combined with aggregate functions such as `SUM()` to calculate totals for each group.
+
+Example:
+
+```sql id="j9k2lm"
+SELECT Region, SUM(GNP) AS TotalGNP
+FROM country
+WHERE Continent = 'Africa'
+GROUP BY Region;
+```
+
+This query calculates the total GNP for each region in Africa.
+
+The query first filters the countries to Africa, then groups them by region, and finally calculates the total GNP for each region.
