@@ -215,3 +215,23 @@ ORDER BY Population ASC;
 ```
 
 `ASC` is the default sorting order if no direction is specified.
+
+### 12. HAVING
+
+`HAVING` is used to filter results after the `GROUP BY` operation.
+
+Example:
+
+```sql id="5w6j1n"
+SELECT Continent, COUNT(*) AS NumberOfCountries
+FROM country
+GROUP BY Continent
+HAVING COUNT(*) > 10;
+```
+
+This groups countries by continent and returns only continents that have more than 10 countries.
+
+**Key difference:**
+
+- `WHERE` filters individual records before grouping.
+- `HAVING` filters grouped results after `GROUP BY`.
