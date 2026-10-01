@@ -252,3 +252,18 @@ GROUP BY Region;
 This query calculates the total GNP for each region in Africa.
 
 The query first filters the countries to Africa, then groups them by region, and finally calculates the total GNP for each region.
+
+### 14. DISTINCT
+
+`DISTINCT` is used to return only unique values from a column.
+
+Example:
+
+```sql id="d3r8kp"
+SELECT DISTINCT Region
+FROM country;
+```
+
+This returns each region only once, even if multiple countries belong to the same region.
+
+`DISTINCT` is useful when exploring a database and identifying the different categories or values stored in a column.
