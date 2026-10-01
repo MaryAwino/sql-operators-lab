@@ -97,6 +97,32 @@ This returns countries located in either Africa or Asia.
 
 The `NOT IN` operator excludes the specified values.
 
+### 7. NULL Values
+
+`NULL` represents a missing or unknown value in a database.
+
+To find records where a column contains `NULL`, use `IS NULL`.
+
+Example:
+
+```sql id="8r1t9k"
+SELECT Name, Capital, Continent
+FROM country
+WHERE Capital IS NULL;
+```
+
+To find records where a column does not contain `NULL`, use `IS NOT NULL`.
+
+Example:
+
+```sql id="7v8k2m"
+SELECT Name, Capital, Continent
+FROM country
+WHERE Capital IS NOT NULL;
+```
+
+`NULL` cannot be compared using `=` or `!=`. Use `IS NULL` or `IS NOT NULL` instead.
+
 Example:
 
 ```sql
