@@ -138,3 +138,19 @@ WHERE Name LIKE "Ke_ya";
 ```
 
 This searches for names where the `_` represents one character.
+
+### 8. SUM() and AS
+
+`SUM()` is an aggregate function used to calculate the total of numeric values.
+
+Example:
+
+```sql
+SELECT SUM(Population) AS "Europe Population Total"
+FROM country
+WHERE Region LIKE "%Europe%";
+```
+
+The `AS` keyword creates an alias, which gives the calculated column a more meaningful name.
+
+For example, `"Europe Population Total"` is the alias for the `SUM(Population)` result.
