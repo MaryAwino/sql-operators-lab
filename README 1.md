@@ -177,3 +177,17 @@ Example:
 SELECT Population % 2 AS Remainder
 FROM country;
 ```
+
+### 10. LOWER()
+
+`LOWER()` converts text to lowercase. It can be useful when performing searches without depending on the capitalization of the stored data.
+
+Example:
+
+```sql id="5s7d2p"
+SELECT Name, Capital, Region
+FROM country
+WHERE LOWER(Region) LIKE "%central%";
+```
+
+This searches for regions containing `central` regardless of how the text is capitalized.
