@@ -154,3 +154,26 @@ WHERE Region LIKE "%Europe%";
 The `AS` keyword creates an alias, which gives the calculated column a more meaningful name.
 
 For example, `"Europe Population Total"` is the alias for the `SUM(Population)` result.
+
+### 9. Arithmetic Operators
+
+SQL supports arithmetic operations such as addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), and modulus (`%`).
+
+Example:
+
+```sql id="1o1j4h"
+SELECT Name, Population, SurfaceArea,
+       Population / SurfaceArea AS PopulationDensity
+FROM country;
+```
+
+This calculates the population density by dividing the population by the surface area.
+
+The `%` operator returns the remainder after division.
+
+Example:
+
+```sql id="j3m6v2"
+SELECT Population % 2 AS Remainder
+FROM country;
+```
