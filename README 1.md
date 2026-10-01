@@ -320,3 +320,25 @@ This query demonstrates the use of:
 - `LIKE` to filter regions based on a text pattern
 - `AS` to create meaningful column names
 - `WHERE` to filter the records
+
+## Skills Learned
+
+Through this lab, I practiced:
+
+- Writing SQL `SELECT` queries
+- Filtering data with `WHERE`
+- Combining conditions with `AND` and `OR`
+- Searching ranges using `BETWEEN`
+- Pattern matching with `LIKE` and wildcards
+- Filtering values with `IN` and `NOT IN`
+- Handling `NULL` values
+- Using aggregate functions such as `COUNT()` and `SUM()`
+- Grouping data with `GROUP BY`
+- Filtering grouped results with `HAVING`
+- Sorting results with `ORDER BY`
+- Creating aliases with `AS`
+- Using arithmetic operators
+- Converting text with `LOWER()`
+- Returning unique values with `DISTINCT`
+- Understanding SQL operator precedence
+- Performing basic data analysis using SQL
