@@ -353,3 +353,9 @@ Through this lab, I practiced:
 - **Main Table:** `country`
 - **Access Method:** AWS Command Host using Session Manager
 - **Operating System:** Linux
+
+## Conclusion
+
+This lab strengthened my practical understanding of SQL operators and conditional data analysis using MySQL/MariaDB. I practiced writing queries to filter, group, sort, and analyze data from the `world` database.
+
+The exercises also helped me understand how SQL can be used to extract meaningful information from structured datasets and provided a foundation for more advanced database and data analysis tasks.
