@@ -267,3 +267,35 @@ FROM country;
 This returns each region only once, even if multiple countries belong to the same region.
 
 `DISTINCT` is useful when exploring a database and identifying the different categories or values stored in a column.
+
+### 15. Operator Precedence
+
+SQL evaluates operators in a specific order. For conditions using `AND` and `OR`, `AND` is evaluated before `OR`.
+
+Example:
+
+```sql
+SELECT Name, Continent, Population
+FROM country
+WHERE Continent = 'Africa'
+   OR Continent = 'Asia'
+   AND Population > 50000000;
+```
+
+Because `AND` is evaluated before `OR`, SQL interprets the condition as:
+
+```text
+Continent = 'Africa'
+OR (Continent = 'Asia' AND Population > 50000000)
+```
+
+Parentheses can be used to make the intended logic clear:
+
+```sql
+SELECT Name, Continent, Population
+FROM country
+WHERE (Continent = 'Africa' OR Continent = 'Asia')
+  AND Population > 50000000;
+```
+
+Using parentheses is recommended when combining multiple conditions because it makes the query easier to understand and reduces ambiguity.
