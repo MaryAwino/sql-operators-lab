@@ -10,3 +10,13 @@ The lab was completed in an AWS lab environment using a Command Host instance to
 - **Database:** `world`
 - **Main table:** `country`
 - **Database system:** MySQL/MariaDB
+
+## SQL Concepts Practiced
+
+### 1. COUNT()
+
+`COUNT()` is used to count the number of records in a table.
+
+```sql
+SELECT COUNT(*) AS NumberOfCountries
+FROM country;
